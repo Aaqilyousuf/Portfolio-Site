@@ -24,7 +24,7 @@ export interface PRDetails {
 
 export async function fetchPRDetails(pr: PRIdentifier): Promise<PRDetails | null> {
     try {
-        const response = await fetch(`https://api.github.com/repos/${pr.owner}/${pr.repo}/pulls/${pr.number}`);
+        const response = await fetch(`/api/pr-details?owner=${pr.owner}&repo=${pr.repo}&number=${pr.number}`);
         if (!response.ok) {
             console.error(`Failed to fetch PR ${pr.owner}/${pr.repo}#${pr.number}: ${response.statusText}`);
             return null;
