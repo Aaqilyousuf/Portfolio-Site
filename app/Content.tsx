@@ -16,7 +16,7 @@ const Body = () => {
                 </div>
 
                 <div className='text-slate-200 desc-color text-[13px] md:text-[15px] my-4' >
-                    A Backend engineer passionate about building scalable, reliable systems and developer tools.
+                    A Full Stack Developer passionate about building scalable, reliable systems and developer tools.
                     Open-source contributor exploring AI-driven and intelligent backend architectures.
                 </div>
             </div>
